@@ -193,7 +193,7 @@ a {
 
 .menu {
     position: fixed;
-    bottom: 0;
+    bottom: 277px;
     left: 0;
     z-index: 999;
     transform: translateX(-50%);
