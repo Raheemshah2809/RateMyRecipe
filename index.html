@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Home</title>
+</head>
+
+<body class="animate__animated animate__fadeInDown">
+
+    <header class="header container container-pall">
+        <nav class="nav flex flex-jc-sp flex-ai-c">
+            <a class="header__logo" href="index.html">Rate My Recipe</a>
+            <br>
+
+            <div class="toggle-menu flex hide-for-desktop" tabindex="0" role="button">
+                <div class="toggle-menu__dots">
+                    <span class="toggle-menu__dot"></span>
+                    <span class="toggle-menu__dot"></span>
+                    <span class="toggle-menu__dot"></span>
+                    <span class="toggle-menu__dot"></span>
+                </div>
+
+                <span class="toggle-menu__text">Menu</span>
+            </div>
+
+            <ul class="menu flex">
+                <li class="menu__item"><a href="404.html" class="menu__link">Features</a></li>
+                <li class="menu__item"><a href="prices.html" class="menu__link">Pricing</a></li>
+                <li class="menu__item"><a href="404.html" class="menu__link">About Us</a></li>
+                <!-- <li class="menu__item"><a href="404.html" class="menu__link menu__link--primary">Sign In</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero container container-pall">
+        <div class="hero__image">
+
+        </div>
+
+        <div class="hero__text">
+            <h1 class="hero__heading ">Rate <br> My Recipe</h1>
+            <p class="hero__description">
+                Ever Got Bored What You're Eating and Want to Try To Make What Others Are Making?
+                <br>
+                <br>
+                One Here You Can:
+                <br>
+                <br>
+                Upload Your Own Recipe
+                <br>
+                View Other People's Recipes
+                <br>
+                Upvote and Downvote Recipes
+                <br>
+                Comment on Recipes And Give Suggestions For Improving Them
+                <br>
+                Create A Community
+                <br>
+                <br>
+            </p>
+            <a href="404.html" class="hero__cta hero__cta--primary">Coming Soon!</a>
+
+        </div>
+    </section>
+
+    <footer class="footer container container-pall">
+        <div class="footer__top flex flex-jc-c flex-ai-c">
+            <div class="footer__logo">
+                <a href="index.html" class="footer__link">Rate My Recipe</a>
+                <h5>Created By Raheem </h5>
+                <h6>
+                    &copy; 2022
+                </h6>
+            </div>
+
+            <div class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="404.html" class="footer__nav-link">Features</a></li>
+                    <li class="footer__nav-item"><a href="prices.html" class="footer__nav-link">Pricing</a></li>
+                    <li class="footer__nav-item"><a href="404.html" class="footer__nav-link">About Us</a></li>
+                    <!-- <li class="footer__nav-item"><a href="404.html" class="footer__nav-link footer__nav-link--primary">Sign In</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom flex flex-jc-c flex-ai-c">
+            <p class="footer__copyright">
+
+
+
+
+</body>
+<script>
+    const body = document.body;
+
+    // Select Header
+    const header = document.querySelector('.header');
+
+    // Select Toggle-Menu Element
+    const toggleMenu = document.querySelector('.toggle-menu');
+
+    // When Click On Toggle-Menu Element Call Function [OpenMenu]
+    toggleMenu.addEventListener('click', openMenu);
+
+    // Open-Menu Function
+    function openMenu() {
+        // If The Header Contains Class (header--active)
+        if (header.classList.contains('header--active')) {
+            // Remove Class (header--active) From Header
+            header.classList.remove('header--active');
+            // Remove Class (body--noscroll) From Body
+            body.classList.remove('body--noscroll');
+        } else { // Else
+            // Add Class (header--active) On Header
+            header.classList.add('header--active');
+            // Add Class (body--noscroll) On Body
+            body.classList.add('body--noscroll');
+        };
+    };
+
+    // (:
+</script>
+<p class="hero__description">
+    Version 0.1
+</p>
+
+</html>
